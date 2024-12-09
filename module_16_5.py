@@ -5,7 +5,6 @@ from typing import List, Annotated
 from fastapi.responses import HTMLResponse
 
 
-
 class User(BaseModel):
     id: int
     username: str = Field(..., min_length=5, max_length=20, description='Username')
